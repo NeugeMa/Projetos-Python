@@ -137,9 +137,49 @@ if idoso == 'sim':
         print("Estacionar")
 
 #Exercício: Faça um código que mostre as vogais utilizando tudo que aprendemos 
-
 vogal = input("Digite uma letra: ")
 if vogal == "a" or vogal == "e" or vogal == "i" or vogal == "o" or vogal == "u": #utilizando o or 
     print("Isso aí, você acertou a letra 😎")
 else: 
     print("Seu burro!! Você errou")
+
+#Declarando se um aluno está reprovado/aprovado/exame
+nota = int(input("Digite sua nota: "))
+if nota >= 6:
+    print(f"Parabéns você está aprovado, atingindo a média final {nota}")
+elif nota < 6 and nota>=4:
+    print ("Exame")
+else:
+    print("Reprovado!")
+
+#Declarando o imposto de renda 
+salario = float(input("Digite seu sálario atual: "))
+if salario<1903.98: 
+    agiota = 0 #Porcentagem agiota
+    desconto = salario*agiota
+    salario = salario - desconto
+    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
+    
+elif salario >= 1903.98 and salario <= 2826.65: 
+    agiota = 0.075 #Porcentagem agiota
+    desconto = salario*agiota
+    salario = salario - desconto
+    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
+
+elif salario >= 2826.65 and salario <= 3751.05:
+    agiota = 0.15 #Porcentagem agiota
+    desconto = salario*agiota
+    salario = salario - desconto
+    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
+    
+elif salario >= 3751.05 and salario <= 4664.68:
+    agiota = 0.225 #Porcentagem agiota
+    desconto = salario*agiota
+    salario = salario - desconto
+    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
+    
+else: 
+    agiota = 0.275 #Porcentagem agiota
+    desconto = salario*agiota
+    salario = salario - desconto
+    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
