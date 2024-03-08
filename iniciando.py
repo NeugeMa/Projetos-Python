@@ -160,19 +160,19 @@ if salario<1903.98:
     salario = salario - desconto
     print(f" O seu salário com desconto é de {desconto} será {salario}!!")
     
-elif salario >= 1903.98 and salario <= 2826.65: 
+elif salario <= 2826.65: 
     agiota = 0.075 #Porcentagem agiota
     desconto = salario*agiota
     salario = salario - desconto
     print(f" O seu salário com desconto é de {desconto} será {salario}!!")
 
-elif salario >= 2826.65 and salario <= 3751.05:
+elif salario <= 3751.05:
     agiota = 0.15 #Porcentagem agiota
     desconto = salario*agiota
     salario = salario - desconto
     print(f" O seu salário com desconto é de {desconto} será {salario}!!")
     
-elif salario >= 3751.05 and salario <= 4664.68:
+elif salario <= 4664.68:
     agiota = 0.225 #Porcentagem agiota
     desconto = salario*agiota
     salario = salario - desconto
