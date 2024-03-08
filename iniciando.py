@@ -6,8 +6,8 @@ frase = "Olá mundo!"        #string - Escrita
 primeiro_numero = 1         #int - Números 
 segundo_numero = 1.5        #float - Números quebrados
 booleana = False            #boolean - Utilizamos para condicionais
-                            ''' Exemplo: Se você tiver 17 anos e for entrar num site de bebidas,você não irá pode acessar por ser FALSE (não ter 18 anos) 
-                                e caso você tivesse seria TRUE'''
+''' Exemplo: Se você tiver 17 anos e for entrar num site de bebidas,você não irá pode acessar por ser FALSE (não ter 18 anos) 
+ e caso você tivesse seria TRUE'''
 
 print(type(frase))         # type - utilizado para descobrir o tipo de variável 
 print(primeiro_numero)
@@ -155,31 +155,18 @@ else:
 #Declarando o imposto de renda 
 salario = float(input("Digite seu sálario atual: "))
 if salario<1903.98: 
-    agiota = 0 #Porcentagem agiota
-    desconto = salario*agiota
-    salario = salario - desconto
-    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
-    
+    agiota = 0 #Porcentagem agiot    
 elif salario <= 2826.65: 
     agiota = 0.075 #Porcentagem agiota
-    desconto = salario*agiota
-    salario = salario - desconto
-    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
-
 elif salario <= 3751.05:
     agiota = 0.15 #Porcentagem agiota
-    desconto = salario*agiota
-    salario = salario - desconto
-    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
-    
 elif salario <= 4664.68:
     agiota = 0.225 #Porcentagem agiota
-    desconto = salario*agiota
-    salario = salario - desconto
-    print(f" O seu salário com desconto é de {desconto} será {salario}!!")
-    
+  
 else: 
     agiota = 0.275 #Porcentagem agiota
     desconto = salario*agiota
     salario = salario - desconto
     print(f" O seu salário com desconto é de {desconto} será {salario}!!")
+
+# 
