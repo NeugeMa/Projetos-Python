@@ -9,7 +9,7 @@ lad1_medida = int(input("Digite a medida do lado do triângulo: "))
 lad2_medida = int(input("Digite a medida do segundo lado do triângulo: "))
 lad3_medida = int(input("Digite a medida do terceiro lado do triângulo: "))
 
-if lado_medida1 == lad2_medida == lad3_medida:
+if lad1_medida == lad2_medida == lad3_medida:
     print("Triângulo Equilátero")
 elif lad1_medida == lad2_medida or lad1_medida == lad3_medida or lad2_medida == lad3_medida:
     print("Triângulo Isósceles")
