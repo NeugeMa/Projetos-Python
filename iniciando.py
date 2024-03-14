@@ -143,11 +143,26 @@ if vogal == "a" or vogal == "e" or vogal == "i" or vogal == "o" or vogal == "u":
 else: 
     print("Seu burro!! Você errou")
 
+#Outra opção de resolução:
+vogal = input("Digite uma letra: ")
+if vogal == "a": 
+    print("Isso é uma vogal")
+elif vogal == "e":  
+    print("Isso é uma vogal")
+elif vogal == "i":  
+    print("Isso é uma vogal")
+elif vogal == "o":  
+    print("Isso é uma vogal")
+elif vogal == "u":  
+    print("Isso é uma vogal")
+else: 
+    print("Isso é uma consoante")
+
 #Declarando se um aluno está reprovado/aprovado/exame
 nota = int(input("Digite sua nota: "))
 if nota >= 6:
     print(f"Parabéns você está aprovado, atingindo a média final {nota}")
-elif nota < 6 and nota>=4:
+elif nota >=4:
     print ("Exame")
 else:
     print("Reprovado!")
@@ -155,7 +170,7 @@ else:
 #Declarando o imposto de renda 
 salario = float(input("Digite seu sálario atual: "))
 if salario<1903.98: 
-    agiota = 0 #Porcentagem agiot    
+    agiota = 0 #Porcentagem agiota 
 elif salario <= 2826.65: 
     agiota = 0.075 #Porcentagem agiota
 elif salario <= 3751.05:
