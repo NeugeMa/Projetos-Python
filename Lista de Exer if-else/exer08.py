@@ -22,3 +22,26 @@ else:
         print("NÃO É UM POLÍGONO")
     else:
         print("POLÍGONO NÃO IDENTIFICADO")
+
+#Resolução Professor: 
+lados = int(input("Digite o número de lados do polígono: "))
+valor = float(input("Digite a medida do lado (em cm): "))
+forma = '' 
+if lados<3: 
+    print("NÃO É UM POLÍGONO")
+elif lados > 5: 
+    print("NÃO É UM POLÍGONO")
+else: 
+    valor = int(input("Digite o tamanho do lado: "))
+    if lados == 3: 
+        forma = 'triangulo'
+        perimetro = 3*valor 
+    elif lados == 4:
+        forma = 'quadrado'
+        perimetro = 4*valor
+    elif lados == 5: 
+        forma = 'pentagono'
+        perimetro = 5*valor
+
+if forma: 
+    print(f'Você escolheu uma {forma} com périmetro de {perimetro}')

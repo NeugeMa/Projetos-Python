@@ -9,14 +9,28 @@ nm_lado = int(input("Digite o número de lados do polígono: "))
 medida_lado = float(input("Digite a medida do lado (em cm, por favor): "))
 
 if nm_lado == 3:
-    area = (medida_lado ** 2) * (3 ** 0.5) / 4
+    area = 3*medida_lado
     print("TRIÂNGULO")
     print("Área:", area)
 elif nm_lado == 4:
-    area = medida_lado ** 2
+    area = 2*medida_lado
     print("QUADRADO")
     print("Área:", area)
 elif nm_lado == 5:
     print("PENTÁGONO")
 else:
     print("Digito errado, refaça por favor!")
+
+#Resolução Professor:
+nm_lado = int(input("Digite o número de lados do polígono: "))
+medida_lado = float(input("Digite a medida do lado (em cm, por favor): "))
+if nm_lado == 3:
+    forma = 'triangulo'
+    perimetro = 3*medida_lado
+elif nm_lado == 4: 
+    forma = 'quadrado'
+    perimetro = 4*medida_lado
+else: 
+    forma = 'pentágono'
+    perimetro = 5*medida_lado
+    print(f"Você escolheu {forma} com périmetro {perimetro}")

@@ -5,5 +5,11 @@ de maçãs compradas, calcule e escreva o custo total da compra.'''
 #Exer04
 fruta = int(input("Digite quantas maças você comprou na feira hoje? "))
 if fruta >= 12:
-    print(f"O valor da sua compra foi de {feira}")
+    print(f"O valor da sua compra foi de {fruta}")
 
+#Resolução Professor:
+qtd = int(input("Digite quantas maças você comprou na feira hoje? "))
+preco = 0.3
+if qtd >= 12: 
+    preco = 0.25 
+    print({qtd})
