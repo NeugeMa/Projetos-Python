@@ -6,4 +6,3 @@ if idade >= 18:
 else: 
     print("Sai daqui, doido")
     
-# Link exercícios: https://medium.com/reflexão-computacional/estruturas-condicionais-if-elif-e-else-c022faace83f
