@@ -50,6 +50,55 @@ num = 1
 while num <= 100:
     soma += num
     num += 1
-print(f"{soma}")
+print(soma)
+
+#Pedir um input para o usuário de sim ou não e só sair do laço quando o usuário digitar sim
+user = input("Digite sim ou não: ")
+
+while user != 'sim' or user != 'não':
+    print("Digite sim ou não cacete")
+    
+    user = input("Digite sim ou não: ")
+print(f"Aeeee, finalmente você digitou {sim}!")
+
+#Caso o usuário seja idoso ele poderá acessar, se não o programa irá ficar repetindo até responder 'sim'
+idoso = input("Você é idoso? S/N: ")
+while idoso != 'sim' and idoso != 'não': 
+    print("Resposta inválida")
+    idoso = input("Você é idoso? S/N")
+
+if idoso == "sim": 
+    print("hahahhaha velho")
+else: 
+    print("ainda bem")
+
+# Agora utilizando o OR
+idoso = input("Você é idoso? S/N: ")
+while not (idoso != 'sim' and idoso != 'não'): 
+    print("Resposta inválida")
+    idoso = input("Você é idoso? S/N")
+
+if idoso == "sim": 
+    print("hahahhaha velho")
+else: 
+    print("ainda bem")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
