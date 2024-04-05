@@ -1,3 +1,45 @@
+
+#Minha versão :) | tentar refazer mais tarde 
+print("Bem-vindo à Vinharia Agnello!")
+
+ano = int(input("Agora, digite seu ano de nascimento: "))
+end = input("Digite seu endereço: ")
+nascimento = 2024
+
+if nascimento > 18: 
+    print("Escolha agora, três opções de vinhos para saborear nesse feriado de páscoa!! ")
+    vinho = int(input("Digite para: 1. Vinho Barato (50) | 2. Vinho Gurmetizado (200) | 3. Vinho Corotinho (10): "))
+    if vinho == 1: 
+        qtd = int(input("Quantas garrafas você deseja?"))
+        valor = 50 
+        resultado = valor*qtd
+        fretado = 10
+        
+    elif vinho == 2: 
+        qtd = int(input("Quantas garrafas você deseja?"))
+        valor = 200
+        resultado = valor*qtd
+        fretado = ''
+    
+    elif vinho == 3:
+        qtd = int(input("Quantas garrafas você deseja?"))
+        valor = 10 
+        resultado = valor*qtd
+        fretado = 10
+        
+        # Organizando frete
+        if resultado > 200: 
+            fretado = ''
+            print("Você recebeu um desconto, parabens!")
+        else:   
+            print(f"Muito obrigada pela compra e feliz pascoa!! Sua compra deu {resultao+frete}")
+
+else: 
+    print("Você não pode entrar aqui")
+
+
+
+
 # Versão do Professor :)
 
 print("Seja bem-vindo a Vinharia Agnelo!")
