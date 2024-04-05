@@ -82,23 +82,3 @@ if idoso == "sim":
     print("hahahhaha velho")
 else: 
     print("ainda bem")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
