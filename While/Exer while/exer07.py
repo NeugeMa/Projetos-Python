@@ -18,11 +18,10 @@ while True:
         num = int(num)
         break
     else:
-        print("Por favor, digite um número inteiro entre 1 e 10.")
+        print("Erro! Digite entre 1 e 10.")
 
 print(f"Tabuada do {num}:") 
 for i in range(1, 11):                      
-    # Utilizei range para criar uma sequência de números de 1 a 10
     print(f"{num} x {i} = {num * i}")
     
     
