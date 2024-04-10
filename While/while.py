@@ -91,3 +91,20 @@ while True:
             idade = int(idade)
             break 
 print(f"Você possui {idade} anos!!")
+
+# Explicando while True: 
+''' Sendo um loop infinito em Python. Ele continuará executando o bloco de código dentro dele até que uma 
+instrução break seja encontrada.
+
+Explicação prática:
+''' 
+while True: 
+    nota = input("Digite sua nota: ")               #Insirir uma nota de 0 à 10 
+    if nota.isnumeric():                            #Confere se a nota é um número
+        if int(nota) >= 0 and int(nota) <= 10:      #E se a nota está entre 0 e 10, o programa imprime a nota e sai do loop (utilizando o break)
+            nota = int(nota)
+            print(f"Essa é sua nota {nota}")
+            break 
+    print("Resposta inválida")                      
+    #Se a entrada do usuário não for numérica ou não estiver entre 0 e 10, o programa imprime "Resposta inválida" 
+    # e o loop while True: começa novamente,
