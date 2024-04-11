@@ -32,6 +32,11 @@ while True:
     if len(sexo) == 1:
         if sexo == "f" or "m": 
             break
+''' Uma forma de se fazer 
+sexo = input("Digite seu sexo | (f)eminino ou (m)asculino")
+while not (sexo == 'f' or sexo == ' m'): # while sexo != "f" and sexo != "m": 
+    sexo = input("Digite seu sexo | (f)eminino ou (m)asculino")
+'''
         
 while True: 
     estado = input("Digite seu estado civil: \n (s)olteiro \n (c)asado \n (v)iuvo \n (d)ivorciado: ")

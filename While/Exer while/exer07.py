@@ -24,4 +24,11 @@ print(f"Tabuada do {num}:")
 for i in range(1, 11):                      
     print(f"{num} x {i} = {num * i}")
     
-    
+# Forma de fazer utilizando apenas o While 
+num = int(input("Digite um número: "))
+i = 1 # Valor inicial, para que a multiplicação começe com 1 
+
+while i <= 10: 
+    resultado = num * i 
+    print(f"{num} x {i} = {resultado}")
+    i += 1 

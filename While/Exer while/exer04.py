@@ -39,3 +39,17 @@ while True:
 
 media = soma / contador if contador != 0 else 0
 print (f"A soma dos números é {soma} e a média é {media}")
+
+#Resolução Professor: 
+qtd = 0
+soma = 0 
+while qtd < 5: #Ele se repete 5 vezes, não tendo a necessidade de fazer 5 inputs
+    numero = input(f"Diga o {qtd+1} número: ")
+    while not numero.isnumeric():
+        print("Erro! Digite um número")
+        numero = input(f"Diga o {qtd+1} número:")
+    numero = int(numero)
+    soma += numero
+    qtd += 1
+print(f"A soma é de {soma}")
+print(f"A média é {soma/qtd}")
