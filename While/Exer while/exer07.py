@@ -32,3 +32,16 @@ while i <= 10:
     resultado = num * i 
     print(f"{num} x {i} = {resultado}")
     i += 1 
+
+# Resolução Professor:
+while True: 
+    hum = input("Digite um número: ")
+    if num.isnumeric():
+        num = int(num)
+        if num > 0 and num < 10: 
+            break 
+num = 1 #para fazer todas as tabuadas 
+while num < 10: 
+    print(f"{num}x{i} = {num*i}")
+    i += 1 
+num += 1 
