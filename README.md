@@ -1,2 +1,7 @@
-# AtividadesPython
-Atividades desenvolvidas na matéria de python na faculdade :)
+# Repositório Python
+Criado para armazenar todos os conhecimentos adquiridos. 
+
+1. Semestre 
+- Condicionais 
+- While
++ cp01
