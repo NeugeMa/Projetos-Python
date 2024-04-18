@@ -17,4 +17,21 @@ while qtd < 10:
 
 print(f"Quantidade par {pares} | Quantidade impares {impar}")
 
+#Resolução Professor: 
+i = 0
+pares = 0
+impares = 0
+
+while i<10: 
+    num =input("Digite o {i+1} número: ")
+    while not num.isnumeric(): 
+        print("Erro! Digite novamente ")
+        num =input("Digite o {i+1} número: ")
+
+    num = int(num)
+    if num % 2 == 0:
+        pares += 1 
+    
+    i += 1 
+print(f"O número de pares é {pares} e o número de impares é {impares}")
 
