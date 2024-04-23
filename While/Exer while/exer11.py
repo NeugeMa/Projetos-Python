@@ -17,3 +17,6 @@ if num > 1:
         print(f'{num} não é um número primo')
 else:
     print(f'{num} não é um número primo')
+
+
+# Resolução Professor:

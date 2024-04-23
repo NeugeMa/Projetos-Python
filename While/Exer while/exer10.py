@@ -16,3 +16,15 @@ quantidade = len
 media = soma / quantidade 
 
 print(f"A média aritmética das notas é: ")
+
+# Resolução Professor:
+num = 5 
+fatorial = num 
+fatorial_string = f"{num} = {num}"
+
+while num > 1:
+    num -=1 
+    fatorial*= num
+    fatorial_string += f"*{num}"
+fatorial += f" = {fatorial}"
+print(fatorial_string)
