@@ -3,8 +3,14 @@
 e os mostre na tela.
 '''
 
-
+nomes = []
 qtd = 1
-while qtd < 10: 
+while len(nomes) < 5: 
     nome = input(f"Diga o {qtd} nome: ")	
+    nomes.append(nome)
+    
+for nome in nomes: 
+    print(nome)
+    
+    
     
