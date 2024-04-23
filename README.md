@@ -8,7 +8,8 @@ Criado para armazenar conhecimentos adquiridos, ao longo do primeiro ano de Enge
 
 
 # Anotações de Palavras 
-Continue: 
+qtd | uma variável para quantidade 
+Continue |
 
 Quando utilizar while True x while: 
 são técnicas, então você pode utilizar a qual você se sentir melhor 
