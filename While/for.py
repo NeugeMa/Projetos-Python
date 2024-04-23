@@ -1,4 +1,6 @@
-#O que é o For?
+# Aprendendo For - 20/04
+
+# O que é o For?
 # é utilizado para percorrer/ ou repetir uma sequência de dados, executando um conjunto de instruções 
 
 #Exemplo

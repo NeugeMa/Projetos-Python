@@ -1,5 +1,60 @@
-#Aprendendo While - 20/03 
-# qtd | uma variável para quantidade 
+# Aprendendo While - 20/03
+
+# O que é While?
+# Uma instrução usada quando não sabemos quantas vezes uma determinada parte do código precisa ser repetida. 
+# Quando o resultado dessa condição passa a ser falso, a execução do loop é interrompida
+
+#Exemplo:
+contador = 0
+while contador < 5: # verifica o valor
+    print(contador)
+    contador += 1
+
+# O contador se inicia com 0, for menor do que 5, as instruções das linhas 3 e 4 serão executadas.
+
+# While com else:
+# É usado para executar alguma instrução/ bloco de código ao final do loop
+
+#Exemplo:
+contador = 0
+while contador < 5: # verifica o valor
+    print(contador)
+    contador += 1
+else: 
+    print("Você saiu do loop")
+    
+''' No loop while, a expressão é testada enquanto for verdadeira. A partir do momento que ela se torna falsa, o 
+código da cláusula else será executado, se estiver presente. '''
+
+x = 0
+while x < 10:   #verifica o valor, se é menor que 10 
+    print(x)
+    x += 1      #incrementa o valor de x
+else:
+    print('Loop concluído')
+    
+# Se dentro da repetição for executado um break, o loop será encerrado sem executar o conjunto da cláusula else.
+
+#Exemplo:
+x = 0
+while x < 10:
+    print(x)
+    x += 1 
+    
+    if x == 6:
+        print("x é igual a 6")
+        break
+else: 
+    print("Loop concluído")
+    
+# Função continue:
+''' Usado para controlar o fluxo de um loop. Quando o interpretador encontra o comando continue, ele interrompe a iteração atual e passa para 
+a próxima iteração do loop. '''
+
+    
+'''--------------------------------------------------------------------------------------------------------------------'''
+
+# Alguns Exercícios:
 
 #Pedir 5 números e conferir se são pares ou ímpares
 par = 0 
@@ -107,4 +162,5 @@ while True:
             break 
     print("Resposta inválida")                      
     #Se a entrada do usuário não for numérica ou não estiver entre 0 e 10, o programa imprime "Resposta inválida" 
-    # e o loop while True: começa novamente,
+    # e o loop while True: começa novamente
+    
