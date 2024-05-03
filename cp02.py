@@ -39,7 +39,7 @@ if idade >= 18:
     qtd = int(qtd)
 
         if opcao == vinho01: 
-            preco == qtd * preco1
+            preco1 == qtd * preco1
             qtd01 += qtd 
         elif opcao == vinho02: 
             preco2 == qtd * preco2
@@ -55,7 +55,7 @@ if idade >= 18:
             print("Opção Inválida")
             resposta = input("Você quer comprar mais vinhos? s/n -> ")
         if resposta == 'n': 
-            break 
+                break 
     if valor >= 500:
         print("Frete grátis!")
     else: 
