@@ -1,4 +1,100 @@
 # Funções: 
+# O que é função:
+'''
+As funções em Python são blocos de código reutilizavel.
+Funções só funcionam quando chamada!
+'''
+
+# Produzindo código, sem função:
+ano = input("Digite seu ano de nascimento:")
+while not ano.isnumeric():
+    ano = input("Digite seu ano de nascimento:")
+ano = int(ano)
+
+qtd = input("Diga a quantidade de garrafas: ")
+while not qtd.isnumeric():
+    qtd = input("Diga a quantidade de garrafas: ")
+qtd = int(qtd)
+
+#Agora produzindo com função:
+def checa_numero(msg):
+    num = input(msg)
+    while not num.isnumeric():
+        num = input(msg)
+    num = int(num)
+    return num
+    
+num = checa_numero("Digite um número:")
+print(num)
+
+#Fazendo uma função e verificar se eles estão na lista:
+def verifica_elemento(lista,elem):
+    for i in range(len(lista)):
+        if lista[i] == elem:
+            return True
+    return False
+
+def forca_opcao(msg,msg_erro,lista_opcao):   #forçando o usuário a escolher
+    opcao = input(msg)
+    while not verifica_elemento(lista_opcao,opcao):
+        print(msg_erro)
+        opcao = input(msg)
+    return opcao
+    
+nomes = ['mari', 'bia','pedro','gabriel','helo','samuel']
+nome = forca_opcao("Qual nome te chamou atenção? \n ->",
+                   'Opção inválida',nomes)
+print(nome)
+contiuar_ou_nao = forca_opcao("Deseja continuar?",'(s/n)', ['s','n'])
+print(contiuar_ou_nao)
+
+#Função que retorne números pares:
+lista = [2,10,99,76,34,51,20,9]
+pares = []
+for elem in lista:
+    if elem%2==0:
+        pares.append(elem) #append = adiciona a lista vazia
+print(pares)
+
+#Agora utilizando uma função:
+def acha_pares(lista_numero):
+    pares = []
+    for elem in lista_numero:
+        if elem%2==0:
+            pares.append(elem)
+    return pares
+lista = [2,10,99,76,34,51,20,9]
+filtro = acha_pares(lista)
+print(filtro)
+lista2 = [90,76,88,787,34,5,23,14]
+filtro = acha_pares(lista2)
+print(filtro)
+
+#Faça uma função que recebe uma lista de números e retorna a soma dos números
+lista = [1,2,3,4,5]
+
+def soma(resultado):
+    soma = 0
+    for elem in resultado:
+        soma += elem
+    return soma 
+
+print(soma(lista))
+
+#Descobrindo qual o maior número dá função:
+def acha_maior(lista):
+    local_maior = 0
+    maior = lista[local_maior]
+    for i in range(len(lista)):
+            if lista[i] > maior:
+                maior = lista[i]
+                local_maior = i
+    return local_maior
+
+lista = [90,76,88,787,34,5,23,14]
+indice_maior = acha_maior(lista)
+print(indice_maior, lista[indice_maior])
+
 
 # Google Drive | https://docs.google.com/document/d/1MkTDNSKe85-RVgow_Kwpk00ybxyR4eRnEXvZvZGsGOU/edit
 
@@ -11,8 +107,6 @@ def podeVotar(nome, idade):
         print(f"Não, a pessoa {nome} ainda não pode votar")
         return False
         
-
-
 a = podeVotar("Lucas",38)
 print(f"a primeira resposta foi {a}")
 b = podeVotar("Maira",13)
