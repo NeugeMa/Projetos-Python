@@ -3,6 +3,7 @@
 '''
 As funções em Python são blocos de código reutilizavel.
 Funções só funcionam quando chamada!
+A chamada de função é usada para executar o bloco de código dentro da função.
 '''
 
 # Produzindo código, sem função:
@@ -43,7 +44,7 @@ def forca_opcao(msg,msg_erro,lista_opcao):   #forçando o usuário a escolher
     
 nomes = ['mari', 'bia','pedro','gabriel','helo','samuel']
 nome = forca_opcao("Qual nome te chamou atenção? \n ->",
-                   'Opção inválida',nomes)
+                    'Opção inválida',nomes)
 print(nome)
 contiuar_ou_nao = forca_opcao("Deseja continuar?",'(s/n)', ['s','n'])
 print(contiuar_ou_nao)
@@ -69,6 +70,22 @@ print(filtro)
 lista2 = [90,76,88,787,34,5,23,14]
 filtro = acha_pares(lista2)
 print(filtro)
+
+#Fazendo um exercício que inverta a lista, de 1 à 9 ele vá alterando a ordem
+lista = [1,2,3,4,5,6,7,8,9]
+
+def inverte_lista(lista):
+    for i in range(len(lista))
+        ultimo = len(lista) - 1
+        aux = lista[i]
+        lista[i] = lista[ultimo - i]
+        lista = [ultimo - i] = aux
+    return
+inverte_lista(lista)
+print(4/3,4//3)
+print(9/2,9//2)
+print(lista)    
+
 
 #Faça uma função que recebe uma lista de números e retorna a soma dos números
 lista = [1,2,3,4,5]
