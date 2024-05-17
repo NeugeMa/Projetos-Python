@@ -56,4 +56,17 @@ num = input("Digite um número:"	)
 print(num)
 
 
+#Fazer uma função que ache uma lista dentro de outra lista:
+def acha_lista(lista,lista2):
+    for i in range(len(lista)):
+        if lista[i:i+len(lista2)] == lista2:
+            return True
+    return False
+
+lista = [1,2,3,4,5,6,7,8,9]
+lista2 = [5,6,7]
+print(acha_lista(lista,lista2))
+
+
+
 

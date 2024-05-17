@@ -75,11 +75,11 @@ print(filtro)
 lista = [1,2,3,4,5,6,7,8,9]
 
 def inverte_lista(lista):
-    for i in range(len(lista))
+    for i in range(len(lista)):
         ultimo = len(lista) - 1
         aux = lista[i]
         lista[i] = lista[ultimo - i]
-        lista = [ultimo - i] = aux
+        lista[ultimo - i] = aux
     return
 inverte_lista(lista)
 print(4/3,4//3)
@@ -209,3 +209,4 @@ def maior(numeros):
 n = maior([10,20,2,30,7]) #maior retorna o 30, o n vai valer 30
 n2 = maior([100,200,2,30,7]) #maior retorna o 200, o n vai valer 200
 n3 = maior([-2,-3,-1]) #BUG! era pra ser -1, mas vai ser 0
+
